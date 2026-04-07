@@ -5,15 +5,10 @@ namespace munt_quiz4_dotnet.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }
+    public string DatabaseMessage { get; set; } = string.Empty;
 
     public void OnGet()
     {
-
+        DatabaseMessage = "Database access has already been done on April 6, 2026 by Muntsirul";
     }
 }
